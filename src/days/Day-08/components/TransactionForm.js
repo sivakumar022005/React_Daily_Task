@@ -9,7 +9,6 @@ function TransactionForm({
   categories,
 }) {
   if (!showForm) return null;
-
   return (
     <div className="fixed inset-0 bg-black/50 flex items-center justify-center p-4 z-50">
       <div className="bg-white rounded-2xl p-6 w-full max-w-md">
@@ -21,7 +20,6 @@ function TransactionForm({
             <X size={22} />
           </button>
         </div>
-
         <form onSubmit={onSubmit} className="space-y-4">
           <div>
             <label className="block text-sm font-medium mb-2">
@@ -38,7 +36,6 @@ function TransactionForm({
               required
             />
           </div>
-
           <div>
             <label className="block text-sm font-medium mb-2">
               Amount (₹)
@@ -56,7 +53,6 @@ function TransactionForm({
               required
             />
           </div>
-
           <div>
             <label className="block text-sm font-medium mb-2">
               Transaction Type
@@ -125,5 +121,4 @@ function TransactionForm({
     </div>
   );
 }
-
 export default TransactionForm;
