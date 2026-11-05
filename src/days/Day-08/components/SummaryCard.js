@@ -14,5 +14,4 @@ function SummaryCard({ title, amount, icon: Icon, iconColor, amountColor, subtit
     </div>
   );
 }
-
 export default SummaryCard;
